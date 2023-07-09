@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 
 import { Box, Button } from "@chakra-ui/react";
 import { useNavigate, Link } from "react-router-dom";
