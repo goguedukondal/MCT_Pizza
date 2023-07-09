@@ -6,10 +6,10 @@ import { useNavigate, Link } from "react-router-dom";
 
 function Pizzas() {
   const storeData = useSelector((reduxStoreData) => {
-    return reduxStoreData;
+    return reduxStoreData.pizzas;
   });
   const navigate = useNavigate();
-  const allPizzas = storeData.pizzas;
+  const allPizzas = storeData;
 
   // const dispatch = useDispatch();
 
