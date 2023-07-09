@@ -8,12 +8,12 @@ import { useDispatch,useSelector } from "react-redux";
 
 import Pizzas from "./Pizzas";
 function Home() {
-  // const [pizzas, setPizzas] = useState([]);
-  const storeData =useSelector((reduxStoreData)=>{return reduxStoreData})
+
+  const storeData =useSelector((reduxStoreData)=>{return reduxStoreData.pizzas})
  
-  const allPizzas =storeData.pizzas
+  const allPizzas =storeData
  
-  // const show=storeData.showbuttons
+  
   
   const dispatch = useDispatch()
   useEffect(() => {
